@@ -2,9 +2,9 @@
 import {useState} from "react";
 
 function Folder({explorer}){
-    const [expand, setExpand] = useState(true);
+    const [expand, setExpand] = useState(false);
 return(
-    <div>
+    <div style= {{backgroundColor:"grey", paddingLeft:30}}>
         <span 
          onClick = {()=> setExpand(!expand)}
        
