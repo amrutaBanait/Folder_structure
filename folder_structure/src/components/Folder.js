@@ -2,12 +2,15 @@
 import {useState} from "react";
 
 function Folder({explorer}){
-    const [expand, setExpand] = useState(false);
+    const [expand, setExpand] = useState(true);
 return(
     <div>
-        <span onclick = {()=> setExpand(!expand)}
+        <span 
+         onClick = {()=> setExpand(!expand)}
+       
        >{explorer.name}</span>
-       <div>
+
+       <div style= {{display: expand? "block" : "none"}}>
         {explorer.items.map((explorer)=>(
                 <Folder explorer = {explorer} />
             ))
