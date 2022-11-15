@@ -10,7 +10,7 @@ return(
        
        >{explorer.name}</span>
 
-       <div style= {{display: expand? "block" : "none"}}>
+       <div style= {{display: expand? "block" : "none", paddingLeft: 26}}>
         {explorer.items.map((explorer)=>(
                 <Folder explorer = {explorer} />
             ))
