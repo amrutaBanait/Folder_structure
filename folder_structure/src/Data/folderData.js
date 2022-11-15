@@ -1,5 +1,5 @@
 const explorer = {
-    name:"root",
+    name:"Root",
     isFolder:true,
     items:[
         {
