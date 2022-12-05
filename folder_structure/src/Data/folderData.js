@@ -1,66 +1,72 @@
 const explorer = {
+    id : "1",
     name:"Root",
     isFolder:true,
     items:[
         {
+            id : "2",
             name:"public",
             isFolder:true,
             items:[
                 {
-                    name:"index.html",
-                    isFolder:false,
-                    items:[]
-                }
-            ]
-        },
-        {
-            name:"src",
-            isFolder:true,
-            items:[
-                {
-                    name:"Data",
+                    id : "3",
+                    name:"public nested 1",
                     isFolder:true,
                     items:[
                         {
-                            name:"folderData.js",
+                        id : "4",
+                        name:"index.html",
+                        isFolder:false,
+                        items:[]
+                        },
+                        {
+                            id : "5",
+                            name:"hello.html",
                             isFolder:false,
                             items:[]
                         }
                     ]
                 },
+             {
+            id : "6",
+            name:"public_nested_file",
+            isFolder:false,
+            items:[]
+             }
+            ]
+        },  
               {
-                name:"components",
+                id : "7",
+                name:"src",
                 isFolder:true,
                 items:[
                     {
-                        name:"folder.js",
+                        id : "8",
+                        name:"App.js",
                         isFolder:false,
                         items:[]
-                    }
-                ]
-              },
+                    },
               {
-                name:"App.js",
+                id : "9",
+                name:"Index.js",
                 isFolder:false,
                 items:[]
               },
               {
-                name:"index.js",
+                id : "10",
+                name:"styles.css",
                 isFolder:false,
                 items:[]
               },
               {
+                id : "11",
                 name:"style.css",
                 isFolder:false,
                 items:[],
               }
             ]
         },
-        {
-            name:"package.json",
-            isFolder:false,
-            items:[]
-        }
+        
     ]
 };
 
