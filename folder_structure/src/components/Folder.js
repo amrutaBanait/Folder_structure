@@ -9,6 +9,12 @@ const [showInput, setShowInput] = useState({
     isFolder:null
 });
 
+//To stop event propagation
+const handleNewFolder = (e) => {
+    e.stopPropagation();
+}
+
+
   if(explorer.isFolder){
 return(
     <div style = {{marginTop : 5}}>
@@ -17,8 +23,8 @@ return(
             <span> 📁{explorer.name}</span>
             
     <div>
-        <button>Folder +</button>
-        <button>File +</button>
+        <button onClick = { (e)=> handleNewFolder(e) } > Folder +</button>
+        <button onClick = { (e)=> handleNewFolder(e) } >File +</button>
     </div>
         </div>
 
