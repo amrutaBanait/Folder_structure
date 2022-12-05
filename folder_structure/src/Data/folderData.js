@@ -66,7 +66,12 @@ const explorer = {
               }
             ]
         },
-        
+        {
+            id : "12",
+            name:"package.json",
+            isFolder:false,
+            items:[]
+        }
     ]
 };
 
