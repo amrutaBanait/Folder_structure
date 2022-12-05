@@ -13,6 +13,11 @@ return(
             <span> 📁{explorer.name}</span>
         </div>
 
+    <div>
+        <button>Folder +</button>
+        <button>File +</button>
+    </div>
+    
         <div style = {{display:expand ? "block" : "none", paddingLeft:25}}>
             {explorer.items.map((exp)=>{ 
                 return(

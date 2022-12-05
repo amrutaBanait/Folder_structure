@@ -9,7 +9,7 @@ cursor:pointer;
 }
 
 .folder > span{
-    margin: 0 5px 2px 0;
+    margin: 0 5px 2px 5px;
 }
 
 .file{
