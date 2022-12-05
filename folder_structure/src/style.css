@@ -18,3 +18,8 @@ cursor:pointer;
     display:flex;
     flex-direction: column;
 }
+
+.folder > div > button{
+    font-size:15px;
+    background-color:red;
+}

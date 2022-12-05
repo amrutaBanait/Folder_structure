@@ -4,6 +4,10 @@ function Folder({explorer}){
   console.log(explorer)
 
 const [expand, setExpand] = useState(false);
+const [showInput, setShowInput] = useState({
+    visible:false,
+    isFolder:null
+});
 
   if(explorer.isFolder){
 return(
@@ -11,13 +15,14 @@ return(
 
         <div className= "folder" onClick = {()=> setExpand(!expand)}>
             <span> 📁{explorer.name}</span>
-        </div>
-
+            
     <div>
         <button>Folder +</button>
         <button>File +</button>
     </div>
-    
+        </div>
+
+
         <div style = {{display:expand ? "block" : "none", paddingLeft:25}}>
             {explorer.items.map((exp)=>{ 
                 return(
