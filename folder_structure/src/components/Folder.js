@@ -16,7 +16,7 @@ return(
         <div style = {{display:expand ? "block" : "none", paddingLeft:25}}>
             {explorer.items.map((exp)=>{ 
                 return(
-                    <Folder explorer={exp} />
+                    <Folder explorer={exp} key= {exp.id}/>
                    
                 )
             })}
