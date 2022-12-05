@@ -10,9 +10,14 @@ const [showInput, setShowInput] = useState({
 });
 
 //To stop event propagation
-const handleNewFolder = (e) => {
+const handleNewFolder = (e, isFolder) => {
     e.stopPropagation();
-}
+
+    setShowInput ({
+        visible:true,
+        isFolder
+    });
+};
 
 
   if(explorer.isFolder){
@@ -23,8 +28,8 @@ return(
             <span> 📁{explorer.name}</span>
             
     <div>
-        <button onClick = { (e)=> handleNewFolder(e) } > Folder +</button>
-        <button onClick = { (e)=> handleNewFolder(e) } >File +</button>
+        <button onClick = { (e)=> handleNewFolder(e, true) } > Folder +</button>
+        <button onClick = { (e)=> handleNewFolder(e , false) } >File +</button>
     </div>
         </div>
 
