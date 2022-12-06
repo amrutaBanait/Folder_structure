@@ -39,6 +39,7 @@ return(
                 showInput.visible && (
                     <div className="inputContainer">
                         <span>{showInput.isFolder ? "📒" : "📃"}</span>
+                        <input className="inputContainer__input"/>
                     </div>
                 )
             }
