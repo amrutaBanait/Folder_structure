@@ -38,9 +38,9 @@ return (
           <span>{showInput.isFolder ? "📒" : "📃"}</span>
           <input 
           type="text"
-          onBlur = {() => setShowInput({...showInput, visibility:false})}
+          onBlur = {() => setShowInput({...showInput, visible:false})}
           className="inputContainer__input" 
-
+          autofocus
           />
         </div>
       )}
