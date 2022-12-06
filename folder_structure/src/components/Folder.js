@@ -35,6 +35,13 @@ return(
 
 
         <div style = {{display:expand ? "block" : "none", paddingLeft:25}}>
+            {
+                showInput.visible && (
+                    <div className="inputContainer">
+                        <span>{showInput.isFolder ? "📒" : "📃"}</span>
+                    </div>
+                )
+            }
             {explorer.items.map((exp)=>{ 
                 return(
                     <Folder explorer={exp} key= {exp.id}/>
