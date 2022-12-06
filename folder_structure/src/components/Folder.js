@@ -19,6 +19,13 @@ const handleNewFolder = (e, isFolder) => {
     });
 };
 
+//function to add  new folder
+const newFolder = (e) => {
+if(e.keyCode === 13 && e.target.value){
+    setShowInput({ ...showInput , visible: false })
+};
+}
+
 
   if(explorer.isFolder){
 return (
@@ -38,9 +45,11 @@ return (
           <span>{showInput.isFolder ? "📒" : "📃"}</span>
           <input 
           type="text"
+           onKeyDown={newFolder}
           onBlur = {() => setShowInput({...showInput, visible:false})}
           className="inputContainer__input" 
           autofocus
+         
           />
         </div>
       )}
