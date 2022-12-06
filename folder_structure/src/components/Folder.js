@@ -12,7 +12,7 @@ const [showInput, setShowInput] = useState({
 //To stop event propagation
 const handleNewFolder = (e, isFolder) => {
     e.stopPropagation();
-
+    setExpand(true);
     setShowInput ({
         visible:true,
         isFolder

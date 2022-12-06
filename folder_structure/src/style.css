@@ -23,3 +23,23 @@ cursor:pointer;
     font-size:15px;
     background-color:red;
 }
+
+.inputContainer{
+    align-items: center;
+    display: flex;
+    gap:5px;
+}
+
+.inputContainer > span{
+margin-top:5px;
+}
+
+.inputContainer__input{
+    display:flex;
+    padding:5px;
+    align-items: center;
+    cursor:pointer;
+    justify-content: space-between;
+    margin:6px 0 0 0;
+    border:2px solid grey;
+}
