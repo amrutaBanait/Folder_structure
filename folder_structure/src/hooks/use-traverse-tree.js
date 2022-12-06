@@ -1,15 +1,15 @@
-const useTraverseTree = () =>{
-    function insertNode (tree, folderId, item, idFolder){
-        if(tree.id === folderId && isFolder){
-            tree.item.unshift({
-                id: new Date().getTime(),
-                name: item,
-                isFolder,
-                items:[]
-            })
-        }
+const useTraverseTree = () => {
+  function insertNode(tree, folderId, item, isFolder) {
+    if ( tree.id === folderId && isFolder ) {
+      tree.item.unshift({
+        id: new Date().getTime(),
+        name: item,
+        isFolder,
+        items: [],
+      });
     }
-    return (insertNode)
-}
+  }
+  return insertNode;
+};
 
 export default useTraverseTree;
