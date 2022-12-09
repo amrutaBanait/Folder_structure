@@ -11,16 +11,15 @@ export default function App() {
 
   const handleInsertNode = (folderId, item, isFolder) => {
 
-    const [exploreData, setExploreData] = useState(explorer);
-
     const finalTree = insertNode(exploreData, folderId, item, isFolder);
 
     setExploreData(finalTree);
   };
   // console.log(exploreData)
+
   return (
     <div className="App">
-      <Folder explorer={exploreData} />
+      <Folder handleInsertNode = { handleInsertNode} explorer={exploreData} />
     </div>
   );
 }

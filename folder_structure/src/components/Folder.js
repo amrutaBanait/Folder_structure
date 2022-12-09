@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function Folder({explorer}){
+function Folder({handleInsertNode,explorer}){
   console.log(explorer)
 
 const [expand, setExpand] = useState(false);
@@ -22,6 +22,7 @@ const handleNewFolder = (e, isFolder) => {
 //function to add  new folder
 const newFolder = (e) => {
 if(e.keyCode === 13 && e.target.value){
+  handleInsertNode();
     setShowInput({ ...showInput , visible: false })
 };
 }
