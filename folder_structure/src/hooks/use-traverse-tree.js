@@ -9,11 +9,18 @@ const useTraverseTree = () => {
         isFolder: isFolder,
         items: [],
       });
-    }
+    
     return tree;
   }
-  return insertNode;
-};
+ 
+  let latestNode = [];
+  latestNode = tree.items.map ((ob) => {
+    return insertNode(ob, folderId, item, isFolder);
+  });
+
+  return {...tree, items: latestNode };
+
+  };
 
 export default useTraverseTree;
 
