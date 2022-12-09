@@ -22,6 +22,14 @@ const useTraverseTree = () => {
 
   };
 
+  const deleteNode = () => {};
+
+  const renameNode = () => {};
+
+  return { insertNode, deleteNode, renameNode};
+};
+
+
 export default useTraverseTree;
 
 
