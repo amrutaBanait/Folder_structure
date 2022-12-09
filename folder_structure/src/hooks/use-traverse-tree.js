@@ -8,6 +8,7 @@ const useTraverseTree = () => {
         items: [],
       });
     }
+    return tree;
   }
   return insertNode;
 };
